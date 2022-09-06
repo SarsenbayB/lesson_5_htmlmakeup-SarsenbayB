@@ -1,0 +1,197 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16pt;
+}
+#wrapper {
+  /* background-color: #ccc; */
+  padding-right: 23em;
+}
+#header {
+  /* border: 1px solid #000; */
+  /* float: right; */
+  width: 23em;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #4acaa8;
+  color: #fff;
+  text-align: center;
+  overflow-y: auto;
+}
+#header > header {
+  padding: 3em;
+}
+#header > header img {
+  width: 8em;
+  border-radius: 100%;
+}
+#header > header h1 {
+  font-size: 1.85em;
+  font-weight: 700;
+}
+#header > header p {
+  font-style: italic;
+  font-weight: 100;
+}
+#header > nav ul {
+  list-style: none;
+  padding: 0;
+}
+#header > nav ul li {
+  border-top: 2px solid #5ccfb1;
+}
+#header > nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 17pt;
+  display: block;
+  padding: 0.85em 0;
+}
+#header > nav ul li a.active {
+  background-color: #fff;
+  color: #4acaa8;
+}
+#header > footer {
+  padding: 3em;
+}
+#header > footer ul {
+  list-style: none;
+  padding: 0;
+}
+#header > footer ul li {
+  display: inline-block;
+  padding-right: 1em;
+}
+#header > footer ul li a {
+  text-decoration: none;
+  font-size: 1.75em;
+  color: #fff;
+}
+#main {
+  /* border: 1px solid #000; */
+  background-color: #ddd;
+  /* height: 1000px; */
+  /* margin-right: 200px; */
+}
+
+#footer {
+  /* border: 1px solid #000; */
+  background-color: #303030;
+  color: #888;
+  height: 400px;
+}
+
+/*---вложенные блоки ---*/
+#one,
+#two,
+#three,
+#four {
+  /* border: 1px solid #000; */
+  margin: 0px;
+  height: 600px;
+}
+#one {
+  background-color: white;
+}
+#two {
+  background-image: url(bg.jpg);
+}
+#three {
+  background-image: url(bg3.jpg);
+}
+#one > header img {
+  width: 100%;
+}
+#one > .content h1 {
+  font-size: 1.95em;
+}
+#one > .content h4 {
+  color: #777;
+  font-size: 1.65em;
+  font-weight: 400;
+}
+#one > .content p {
+  color: #777;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400;
+}
+/* -- content style --*/
+.content {
+  padding: 40px;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  #wrapper {
+    padding-right: 0;
+  }
+  #header {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #wrapper {
+    padding-right: 16em;
+  }
+  #header {
+    width: 16em;
+  }
+  #header > header {
+    padding: 2.5em;
+  }
+  #header > header img {
+    width: 7em;
+    border-radius: 100%;
+  }
+  #header > header h1 {
+    font-size: 1.45em;
+    font-weight: 600;
+  }
+  #header > header p {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15pt;
+  }
+  #header > nav ul li a {
+    font-size: 16pt;
+    padding: 0.75em 0;
+  }
+  #header > footer ul li {
+    padding-right: 0.45em;
+  }
+  #header > footer ul li a {
+    font-size: 1.45em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #wrapper {
+    padding-right: 20em;
+  }
+  #header {
+    width: 20em;
+  }
+  #header > header h1 {
+    font-size: 1.75em;
+  }
+  #header > footer ul li {
+    padding-right: 0.75em;
+  }
+  #header > footer ul li a {
+    font-size: 1.65em;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1680px) {
+  #wrapper {
+    padding-right: 23em;
+  }
+  #header {
+    width: 23em;
+  }
+}
